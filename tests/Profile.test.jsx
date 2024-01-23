@@ -19,3 +19,18 @@ test("renders with the correct title ", () => {
     // Assert
     expect(screen.getByRole("heading")).toHaveTextContent("Quackie Makers");
 });
+
+test("renders with the correct job ", () => {
+    const name = 'Quackie Makers';
+    const birthdate = 'Quackie Makers';
+    const job = "Makers' favourite rubber duck";
+
+    const { getByTestId } = render(
+    <Profile name={name} job={job} birthdate={birthdate} />
+    );
+
+    const jobElement = getByTestId('job');
+
+    expect(jobElement).toBeInTheDocument();
+    expect(jobElement.textContent).toBe(job);
+});
