@@ -5,6 +5,7 @@ import './App.css'
 import React from 'react';
 import Profile from "./components/Profile.jsx";
 import Product from './components/Product.jsx';
+import Recipe from './components/Recipe.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,11 @@ function App() {
           name="Air Fryer K2000"
           description="The best air fryer to fry all things, even Mars bars"
           price={2000}
+        />
+        <Recipe 
+          title="Finnish cinammon buns" 
+          type="dessert" 
+          duration={60} 
         />
       </div>
     </>
