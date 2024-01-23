@@ -7,6 +7,10 @@ $ sudo npm install
 
 $ sudo n stable
 
-$ sudo npm install vitest @testing-library/react @testing-library/jest-dom jsdom
-
 $ sudo npm run dev
+
+$ sudo npm install --save-dev @testing-library/react
+
+npm list jest @babel/core @babel/preset-react
+sudo npm install --save-dev @babel/preset-env
+sudo npm install --save-dev jest-environment-jsdom
