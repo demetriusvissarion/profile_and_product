@@ -8,7 +8,7 @@ import Product from './components/Product.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
-  const product_name = 'Quackie Makers';
+  const name = 'Quackie Makers';
   const birthdate = 'Quackie Makers';
   const job = "Makers' favourite rubber duck";
 
@@ -36,7 +36,7 @@ function App() {
       </p>
       <div>
         <Profile 
-          product_name={product_name} 
+          name={name} 
           birthdate={birthdate} 
           job={job}
         />
